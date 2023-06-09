@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br"> <!--Antes tava "en".-->
+<head>
+	<!--codificação caractere da página-->
+	<meta charset="utf-8">
+ 	<link rel="icon" href="596.png">
+	<!--SEO geral-->
+	<title>App Inventor</title>
+	<meta name="description" content="Um pouco sobre App Inventor.">
+ 	<link rel="canonical" href="http://www.estudio596.com"> 
+	<meta name="author" content="joe" >
+	<meta name="robots" content="index"> 
+	<!--Open Graph Facebook-->
+	
+<link rel="stylesheet" href="css/css.css">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+
+
+ 
+</head>
+<body>
+
+
+
+
+
+<header>
+		<span id="titleApp"> App Inventor</span>
+		<nav>
+			<ul class="menu">
+				<li><a href="index.html"><span class="icon">🏠️</span><br>Home</a></li>
+				<li><a href="memory.html"><span class="icon">📎️</span><br>Memória</a></li>
+				<li><a href="interface.html"><span class="icon">😎️</span><br>Interface</a></li>
+				<li><a href="operators.html"><span class="icon">⏸️</span><br>Operadores</a></li>
+				<li><a href="basecodes.html"><span class="icon">✏️</span><br>Códigos básicos</a></li>
+				<li><a href="clock.html"><span class="icon">⏰️</span><br>Clock</a></li>
+				<li><a href="colors.html"><span class="icon">🎨️</span><br>Colors</a></li>
+				<li><a href="media.html"><span class="icon">🖼️</span><br>Media</a></li>
+				<li><a href="geometria.html"><span class="icon">📐️</span><br>Geometria</a></li>
+				<li><a href="database.html"><span class="icon">💾️</span><br>Banco de Dados</a></li>
+				<li><a href="drawing.html"><span class="icon">✍️</span><br>Drawing & Animation</a></li>
+				<li><a href="procedures.html"><span class="icon">▶️</span><br>Sub-rotina</a></li>
+			</ul>
+	</nav>
+</header>
+
+
+
+
+
+Contador, Notificação Push...
+
+
+
+<h3>Contador</h3>
+<p>&nbsp;</p>
+<p>Alguns ckt podem usa Clock enquanto outros n&atilde;o.</p>
+<p><strong>Bin&aacute;rio </strong></p>
+<p>Vide &quot;Toggle (vis&iacute;vel on/off )&quot; </p>
+<p><br>
+      <strong>Eternity</strong> Components: clock. <br>
+      <img src="image/aiCouEter.png" alt="App Inventor" width="340" height="56" class="#"/> <br>
+      <br>
+      <strong>Up/Down </strong> <br>
+      <img src="image/aiCouUpDown.png" alt="App Inventor" width="339" height="158" class="#"/> </p>
+<p>        <strong>1-4s - Loop</strong> Duas formas de se fazer. <br>
+      <img src="image/aiCou_4secLp.png" alt="App Inventor" width="787" height="182" class="#"/> </p>
+<p><strong>1-4 Loop</strong> Bot&atilde;o ao ir clicando conta at&eacute; 4, com loop. Aqui duas formas de se fazer. <br>
+  <img src="image/aiCou_Lp.png" alt="App Inventor" width="685" height="134" class="#"/></p>
+<p>
+        <strong>Count and stop</strong> Components: Layout com um botão, um label. <br>
+        <img src="image/aiCou_ContaPara.png" alt="App Inventor" width="344" height="138" class="#"/> <br>
+        <br>
+        <strong>Countdown</strong> Components: Um label, clock. <br>
+        <img src="image/aiCou_Countdown.png" alt="App Inventor" width="345" height="302" class="#"/> <br>
+        <br>
+        <strong>Repeti&ccedil;&atilde;o</strong> Cada clique em <em>btH</em> repete 4 vezes  o conte&uacute;do de <em>lbH</em>, aparecendo o resultado em <em>Label12</em>.<br>
+      <img class="#" src="image/aiCou_For.png" alt="App Inventor"/> </p>
+<p>        <strong>Loop - Automatic</strong> Components: Um botão, label, clock. <br>
+        <img src="image/aiCou_Lp_automatic.png" alt="App Inventor" width="345" height="180" class="#"/> </p>
+<p>        <strong>Random 1 &agrave; 4 </strong> <br>
+  Ckt 1:<br>
+  var <em>global i</em>: poderia ser o n&uacute;mero 0 ou mesmo nada. <br>
+  Ckt 2:<br>
+        var <em>global B</em>: &iacute;ndice. Consta 0 mas poderia n&atilde;o estar declarado nada.<br>
+        random: sorteia algo da vari&aacute;vel A.<br>
+        va <em>global  A</em>: pode ser adicionado ou retirado mais &agrave; lista. <span class="style3"><em>Ao usar o bloco &quot;length of list&quot; temos que conectar uma lista. Se ligarmos uma var simples (como index por exemplo) dar&aacute; erro!</em></span> <br>
+        <img src="image/aiCouRnd_1-4.png" alt="App Inventor" width="810" height="100" class="#"/></p>
+<p>
+        <strong>Random com valores dados pelo usu&aacute;rio</strong> Usa l&oacute;gica e Text Box. <br>
+        <img src="image/aiCouRnd_MinMax.png" alt="App Inventor" width="582" height="142" class="#"/> <br>
+        <br>
+        <strong>Random - StartStopLp</strong> <br>
+        <img src="image/aiCouRnd_StartStopLp.png" alt="App Inventor" width="324" height="243" class="#"/> <br>
+        <br>
+        <strong>Random Perguntas e Respostas</strong> Uso de TDB, procedure, listas... <br>
+        <img src="image/aiCouRnd_V1V2IdTDB.png" alt="App Inventor" width="533" height="364" class="#"/> </p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+
+
+    <h3>Notifica&ccedil;&atilde;o Push </h3>
+    <p>&nbsp;</p>
+    <p><strong>NotificacaoPush</strong> <br>
+      https://www.youtube.com/watch?v=vsrVlhrQT4w&amp;t=38s      <br>
+        <img src="image/aiNotificacaoPush.jpg" width="510" height="212"></p>
+    <p><strong>Notifications</strong> <br>
+  https://www.youtube.com/watch?v=xAh_RyjYbww&amp;t=73s </p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+
+
+
+
+
+<h3>Calculadora</h3>
+<p>&nbsp;</p>
+<p><strong>Soma A e B e mostra resultado</strong> https://youtu.be/_voC-VlhrUk <br>
+  <img src="image/ai_calc.jpg" width="498" height="170"></p>
+<p><strong>Tabuada de 6</strong> 
+  https://www.youtube.com/watch?v=5wekiVcvg4Y&t=224s </p>
+<p><strong>Calculadora</strong> https://youtu.be/pancv4gAGug </p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+
+
+
+
+	
+</body>
+</html>

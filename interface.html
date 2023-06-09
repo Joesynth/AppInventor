@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br"> <!--Antes tava "en".-->
+<head>
+	<!--codificação caractere da página-->
+	<meta charset="utf-8">
+ 	<link rel="icon" href="596.png">
+	<!--SEO geral-->
+	<title>App Inventor</title>
+	<meta name="description" content="Um pouco sobre App Inventor.">
+ 	<link rel="canonical" href="http://www.estudio596.com"> 
+	<meta name="author" content="joe" >
+	<meta name="robots" content="index"> 
+	<!--Open Graph Facebook-->
+	
+<link rel="stylesheet" href="css/css.css">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+
+
+ 
+</head>
+<body>
+
+
+
+
+
+<header>
+		<span id="titleApp"> App Inventor</span>
+		<nav>
+			<ul class="menu">
+				<li><a href="index.html"><span class="icon">🏠️</span><br>Home</a></li>
+				<li><a href="memory.html"><span class="icon">📎️</span><br>Memória</a></li>
+				<li><a href="interface.html"><span class="icon">😎️</span><br>Interface</a></li>
+				<li><a href="operators.html"><span class="icon">⏸️</span><br>Operadores</a></li>
+				<li><a href="basecodes.html"><span class="icon">✏️</span><br>Códigos básicos</a></li>
+				<li><a href="clock.html"><span class="icon">⏰️</span><br>Clock</a></li>
+				<li><a href="colors.html"><span class="icon">🎨️</span><br>Colors</a></li>
+				<li><a href="media.html"><span class="icon">🖼️</span><br>Media</a></li>
+				<li><a href="geometria.html"><span class="icon">📐️</span><br>Geometria</a></li>
+				<li><a href="database.html"><span class="icon">💾️</span><br>Banco de Dados</a></li>
+				<li><a href="drawing.html"><span class="icon">✍️</span><br>Drawing & Animation</a></li>
+				<li><a href="procedures.html"><span class="icon">▶️</span><br>Sub-rotina</a></li>
+			</ul>
+	</nav>
+</header>
+
+
+
+
+Button, Check Box, Slider...
+
+
+
+  <h1>Interface</h1>
+  <p>&nbsp;</p>
+<h3>Button</h3>
+<p><br>
+
+
+  <strong>Radio</strong> 3 ckts distintos. Um atua com caracteres, outro imagem e outro cor.<br>
+  <img src="image/aiInt_btRadTxt.png" alt="App Inventor" width="807" height="203" class="#"/> <br>
+  <br>
+  <br>
+
+  <strong>Toggle </strong> V&aacute;rias formas de fazer um bot&atilde;o liga desliga.<br>
+Note que pode haver   contador bin&aacute;rio.<br>
+c &eacute; contador, ou estado, bit; e alterna entre 0 e 1. Conforme cada estado faz tal a&ccedil;&atilde;o (set) <br> 
+CKT3: 
+<em>btEstado</em> var inicia com zero. Estando em zero fara o que estiver na linha abaixo, ou seja, acertar (definir) uma ou mais coisas. A primeira acertar a cor de fundo. A segunda, acertar a propria var pra um.<br>
+Com a var em 1, nova cor eh definida e a propria var eh re-acertada pra um novamente.<br>
+<img src="image/aiInt_btTgVis.png" alt="App Inventor" width="778" height="209" class="#"/> <br>
+<span class="style3"><em>Toggle tamb&eacute;m pode ser feito com Slider. Vide Slider.</em></span></p>
+<p><strong>Toggle FullScreen</strong> <br>
+  <img src="image/aiInt_bt_TgFullScreen.jpg" width="293" height="82"> </p>
+<p><strong>Clear</strong> Components: Text box. <br>
+  <img src="image/aiInt_btLimCam.png" alt="App Inventor" width="251" height="46" class="#"/> </p>
+<p><strong>Long Click</strong> <br>
+  https://youtu.be/yiTygRVDndA </p>
+<p>  <strong>Botão A + B1 ou B2</strong> <br>
+Components: basicamente três ou quatro botões. <br>
+bt125: ao clicar  toca uma música; sendo que ao fazê-lo bt125 e btReset se acendem. <br>
+
+bt130: se clicarmos  a primeira música para e uma nova começa.<br>
+btReset: é um STOP; se clicar a músicas param.</p>
+  <p><img src="image/aiInt_btA+B1ouB2.png" alt="App Inventor" width="536" height="444" class="#"/>
+  <p><strong>Bot&atilde;o com cloxk - pisca-pisca</strong> Um bot&atilde;o m&aacute;gico! <br>
+    https://www.youtube.com/watch?v=n6sWkSwBhFg <br>
+    StartGame: quando clicamos ele se torna invis&iacute;vel e torna outro bot&atilde;o vis&iacute;vel, o StarNewGame. Al&eacute;m disso, ele  desliga o Clock. <br>
+    StartNewGame inicia invis&iacute;vel, e aparece quando clicamos em StartGame (que est&aacute; piscando).<br>
+    TimerInterval define tempo do rel&oacute;gio, o piscar mais r&aacute;pido ou lento. <br>
+    <img src="image/aiInt_bt2.jpg" width="820" height="273">
+    <p><strong>Bot&atilde;o com clock - texto mudando</strong> (&quot;piscando&quot;)<br>
+    <img src="image/aiInt_bt.jpg" width="478" height="228">
+  <p><strong>Bot&atilde;o com clock - rec</strong> <br>
+    <em>TimerInterval</em> define tempo do rel&oacute;gio, o piscar mais r&aacute;pido ou lento. <br>
+    https://www.youtube.com/watch?v=n6sWkSwBhFg <br>
+    <span class="style3"><em>Ckt by joe devido pequenas adapta&ccedil;&otilde;es, como o uso da logica and.</em></span> d<br>
+    <img src="image/aiInt_bt3.jpg" width="703" height="331"> 
+  <p>    
+  <p>  <p>  
+  <h3>Check Box</h3>
+  <p>&nbsp; </p>
+  <p>https://sites.google.com/site/stevozip/home/AI2/checkboxes <br>
+    <img src="image/ai_checkBox.jpg" width="785" height="403"> 
+  <p>   
+  <p>&nbsp;</p>
+  <h3>Slider</h3>
+  <p>&nbsp;</p>
+  <p><strong>Afetando N&uacute;meros</strong> 2 ckt identicos. A diferen&ccedil;a &eacute; o <em>MinValue/MaxValue</em> onde no primeiro est&aacute; configurado via <em>initialize</em>.  <br>
+    Text com o <em>Slider1.ThumbPosition</em> faz aparecer no <em>Label1</em> o atual conte&uacute;do (<em>MinValue/MaxValue</em>)   do Slider. Pode-se usar o round (math) entre eles para arredondar os n&uacute;meros. <br>
+      <img src="image/aiInt_sl.png" alt="App Inventor" width="696" height="132" class="#"/></p>
+  <p><strong>Controlando Volume</strong> MinValue/MaxValue pr&eacute;-configurado 0 /100. Note que est&aacute; sendo afetado a propriedade <em>Volume</em> do <em>Player1</em>. <br>
+      <img src="image/aiInt_SliderVol2.jpg" alt="App Inventor" width="474" height="137" class="#"/></p>
+  <p><strong>Controlando tamanho de um ponto</strong> https://youtu.be/_VdEiOOK81U </p>
+  <p>&nbsp;</p>
+  <h3>Slider Toggle</h3>
+  <p>&nbsp;</p>
+  <p><strong>Toggle</strong> Button OnOff. <br>
+    CKT2 (by Joe). MinValue/MaxValue= 1bit. <span class="style3"><em>Joedica: Usei round antes de Slider1.ThumbPosition e funciona.</em></span>  <br>
+      <img src="image/aiInt_SliderBtOnOff_BtToggle.jpg" width="721" height="157"></p>
+  <p>&nbsp;</p>
+  <p><strong>Toggle de Cor</strong><br>
+CKT 1: ideia de &quot;se menor que x cor tal, se maior que x outra cor&quot;. <br>
+https://youtu.be/60CjYdP_FFU<br>
+CKT2 (3 posi&ccedil;&otilde;es; by Joe)
+MinValue/
+
+
+ MaxValue: 1/3. round: se menor que 0.49 arredonda pra 0, se maior pra 1. Note que a p´ropria anima&ccedil;&atilde;o do fader ser&aacute; setada. Outra ideia que tive &eacute; cria uma var e set&aacute;-la com o round e ThumbPosition, assim o fader ter&aacute; uma anima&ccedil;&atilde;o de mover-se mas sem ser setado, embora internamente estar&aacute; contando em n&uacute;mero inteiro.   <br>
+ CKT3 (3 posi&ccedil;&otilde;es; by Joe). Semelhante ao segundo. Sem a l&oacute;gica and e usando s&oacute; menor/maior ocorreu de n&atilde;o fazer todas as transi&ccedil;&otilde;es corretamente.   <br>
+<img src="image/ai_Int_SliCor.jpg" width="979" height="474"></p>
+  <p><strong>Radio 3 Posi&ccedil;&otilde;es</strong>   <br>
+MinValue/
+
+
+ MaxValue: 1/3.<br>
+    round: se menor que 0.49 arredonda pra 0, se maior pra 1. <br>
+    <span class="style3"><em>N&atilde;o sei se j&aacute; vi o round usado com ThumbPosition.</em></span> <br>
+    <img src="image/ai_Int_SliRad_3posicoes.jpg" width="471" height="54"> <br>
+    <br>
+    <br>
+    Timer com slider<br>
+    https://youtu.be/3bzq_eKeTIY</p>
+  <p>Radio buttons <br>
+    https://youtu.be/wfTXwfRzp5w</p>
+  <p>Button Exemple <br>
+    https://youtu.be/1fgsTPF0gFs</p>
+  <p>&nbsp;</p>
+  <p>text</p>
+  <p>Canvas.DrawText - Escreve texto na canvas. </p>
+  <p>&nbsp;</p>
+  <h3>Telas </h3>
+  <p>&nbsp;</p>
+  <p> <strong>Chamar outras telas</strong> Estas equivalentes a &quot;telas de jogo&quot; ou &quot;links de menu&quot;.<br>
+  Antes, clique no bot&atilde;o &quot;AddScreen&quot; e adicione &quot;Tela1&quot; e repita criando &quot;Tela2&quot;. </p>
+  <p><img src="image/aiInt_MenusTelas.jpg" width="351" height="435"></p>
+  <p><strong>V&aacute;rias Telas</strong> <br>https://youtu.be/O0vk9afKwSc <br>
+    https://youtu.be/DATaffQX97I  </p>
+  <p><strong>Passagem de valores entre Telas</strong> <br>https://youtu.be/cIBJRi1bbcY</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>
+  <p>
+  <p>&nbsp;</p>
+  <hr>
+  <p>&nbsp;</p>
+
+
+
+
+
+
+
+	
+</body>
+</html>

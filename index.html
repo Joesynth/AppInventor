@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="pt-br"> <!--Antes tava "en".-->
+<head>
+	<!--codificação caractere da página-->
+	<meta charset="utf-8">
+ 	<link rel="icon" href="596.png">
+	<!--SEO geral-->
+	<title>App Inventor</title>
+	<meta name="description" content="Um pouco sobre App Inventor.">
+ 	<link rel="canonical" href="http://www.estudio596.com"> 
+	<meta name="author" content="joe" >
+	<meta name="robots" content="index"> 
+	<!--Open Graph Facebook-->
+	
+<link rel="stylesheet" href="css/css.css">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+
+
+ 
+</head>
+<body>
+
+
+
+
+
+<header>
+		<span id="titleApp"> App Inventor</span>
+		<nav>
+			<ul class="menu">
+				<li><a href="index.html"><span class="icon">🏠️</span><br>Home</a></li>
+				<li><a href="memory.html"><span class="icon">📎️</span><br>Memória</a></li>
+				<li><a href="interface.html"><span class="icon">😎️</span><br>Interface</a></li>
+				<li><a href="operators.html"><span class="icon">⏸️</span><br>Operadores</a></li>
+				<li><a href="basecodes.html"><span class="icon">✏️</span><br>Códigos básicos</a></li>
+				<li><a href="clock.html"><span class="icon">⏰️</span><br>Clock</a></li>
+				<li><a href="colors.html"><span class="icon">🎨️</span><br>Colors</a></li>
+				<li><a href="media.html"><span class="icon">🖼️</span><br>Media</a></li>
+				<li><a href="geometria.html"><span class="icon">📐️</span><br>Geometria</a></li>
+				<li><a href="database.html"><span class="icon">💾️</span><br>Banco de Dados</a></li>
+				<li><a href="drawing.html"><span class="icon">✍️</span><br>Drawing & Animation</a></li>
+				<li><a href="procedures.html"><span class="icon">▶️</span><br>Sub-rotina</a></li>
+			</ul>
+	</nav>
+</header>
+
+
+
+
+  <nav w3-include-html="inc_nav.html"></nav>  		<!-- INCLUDE-->
+  
+<div class="container-fluid text-center">    
+  <div class="row content">
+    <div class="col-sm-9 text-left"> 
+	<br>
+			
+<div class="#">
+	<div w3-include-html="inc_banner.html"></div>  <!-- INCLUDE-->
+</div>	
+
+
+
+
+
+
+
+
+<main> <!-- Início (Não no WP) -->
+
+	
+
+    <div class="col-sm-9 text-left">
+      <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <hr>
+      <p>&nbsp; </p>
+  <h1>Acessando o site </h1>      
+      
+
+<pre>https://appinventor.mit.edu/
+</pre>
+
+<p>Acesse o site acima e clique no botão Create Apps.
+É bom antes já está logado numa conta google (Ex: meuemail@gmail.com) 
+</p>
+
+
+
+  <h1>App Inventor </h1>
+  <h2>Interação com usuário </h2>
+  <p>&nbsp;</p>
+  <h3>Notifica&ccedil;&otilde;es (Tipos) </h3>
+  <p>Equivale a mensagem via popup de navegador. Pode ser simples mensagem de informa&ccedil;&atilde;o (ShowAlert) bem como a que retorna janela com sim/não. </p>
+  <p><img src="image/aiInt_Notificacoes_tipos.jpg" width="627" height="312"></p>
+  <p> \n serve pra quebrar linha num texto </p>
+  <p></p>
+  <p>&nbsp;</p>
+  <p>&nbsp; </p>
+  <hr>
+  <p>&nbsp;</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<hr>
+<p>&nbsp;</p>
+<h1>Anima&ccedil;&atilde;o</h1>
+<p>&nbsp;</p>
+<h3>Quadrado (virtual)</h3>
+<p><strong>Movendo Horizontalmente Controlado por Slider</strong> (by Joe)  Note que <em>square</em> &eacute; o quadrado mas aonde <em>posX</em> foi retirado da var local para uma global para ser acessada por <em>thumbPosition</em>. <br>
+  <img src="image/aiAni_1.jpg" width="545" height="291">  </p>
+<p>&nbsp;</p>
+<hr>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h3>&Aacute;udio &amp; V&iacute;deo </h3>
+<p>&nbsp;</p>
+<p><strong>Explosion</strong> (&Aacute;udio) https://youtu.be/3eHQsATBhcI<br>
+    <img src="image/aiMed_explosion.jpg" width="525" height="211"></p>
+<p><strong>Radio de 4 bot&otilde;es</strong> (&quot;Placa de som&quot;)<br>
+  https://youtu.be/lbJTlrf5KLE</p>
+<p>Pause<br>
+  https://youtu.be/DKl6xGY1yF4</p>
+<p>&nbsp;</p>
+<p><strong>V&iacute;deo</strong> <br>
+  CKT1 - semelhante ao j&aacute; apresentado l&aacute; na se&ccedil;&atilde;o banco de dados, por&eacute;m  n&atilde;o usa TinyDB e, o bloco <em>.Completed</em> pode ser retirado caso queira que ao terminar de tocar o v&iacute;deo n&atilde;o inicie  outro. Apresentou instabilidade de forma que toca uns 5 videos e  depois para, sendo preciso clicar novamente em Atualizar (btPlay). <br>
+    CKT2<br>
+    <em>Clock1.Timer</em> Se true toca eternamente ao clicar btPlay.<br>
+    <em>call VideoPlayer1.Start</em> Se náo estiver em <em>Clock1.Timer</em> e sim em <em>btPlay.Click</em> o ckt é nulo. <br>
+    <img src="image/aiMedVid.jpg" width="846" height="362"></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+
+
+
+
+
+
+
+
+<h3>Desenho </h3>
+<p>Pen &amp; Eraser (DrawLine) Soft simples e f&aacute;cil de desenha/apaga <br>
+  https://youtu.be/LuM4rp5cZp0</p>
+<p>How to use Canvas, Dragged, and Touch - parce fazer linha reta <br>
+  https://youtu.be/4AUi3A2kVaU</p>
+<p>Canvas Picture Drawing<br>
+  https://youtu.be/etwnsayHdB8</p>
+<p>Canvas Picture Drawing (pt1) <br>
+  https://youtu.be/4WHdr4kBDYY </p>
+<p>draw an arc (DrawPoint) <br>
+  https://youtu.be/p7qsi5Wh1qg</p>
+<p>Drawing Shapes <br>
+  https://youtu.be/qVsVdQQJXvY</p>
+<p>How To Change Line Width / Size<br>
+  https://youtu.be/CnjoMxQgnAk</p>
+<p>How To Make A Drawing<br>
+  https://youtu.be/uzzqfi5dPDE </p>
+<p>https://youtu.be/mwXidmTDAfs</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h3>Dist&acirc;ncia</h3>
+    <p>&nbsp;</p>
+    <p><strong>Distance </strong>http://www.appinventor.org/assets/img/location/distance.png<br>
+        <img src="image/ai_distance.jpg" width="769" height="431"></p>
+    <p><strong>Dist&acirc;ncia Terra</strong> <br>
+      http://kio4.com/appinventori/15D_procedures.htm</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+
+
+
+
+
+
+
+
+
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <h3>WebViewer</h3>
+      <p>&nbsp;</p>
+      <p><strong>Random HTML </strong> Tamb&eacute;m ler .txt.<br>
+  Url pode ser colocado a URL diretamente (file:///mn...index.html) <br>
+  <img src="image/aiWV_Random.jpg" width="562" height="146"></p>
+      <p>https://www.youtube.com/watch?v=oCE1VZ2LJqk </p>
+      <p><strong>Development </strong>Use true ou false conforme o momento de desenvolvimento do app ou a constru&ccedil;&atilde;o.<br>
+  URL para AI Companion: file:///mnt/sdcard/AppInventor/assets/<br>
+  URL ao compilar: file:///android_asset/webviewstring.html <br>
+  <img src="image/aiWV.jpg" width="538" height="131"> </p>
+      <p>&nbsp;</p>
+      <p><strong>WebView</strong> Var development: true ao desenvolver; comutar false ao construir o app.<br>
+  if: seleciona uma das duas URLs.<br>
+  Var HtmlP: contém o meuarquivo.html, o qual será concatenado como uma das URLs. </p>
+      <p>file:///mnt/sdcard/AppInventor/assets/ <br>
+  file:///android_asset/ </p>
+      <p><strong>Planets</strong> by Joe. Mostra os planetas em propor&ccedil;&otilde;es. Pelo bot&atilde;o deslizante &eacute; poss&iacute;vel regular os tamanhos.<br>
+        Bot&otilde;es: s&atilde;o usados para os planetas e o Sol, estes ficando dentro de um arranjo horizontal com Scroll enquanto o Slider1 fica do lado de fora. Pode-se criar tamb&eacute;m vari&aacute;veis sendo uma pra cada planeta e atribuir a cada uma sua propor&ccedil;&atilde;o em rela&ccedil;&atilde;o ao tamanho da Terra. Isso depois facilitar&aacute; na hora de fazer as multiplica&ccedil;&otilde;es.<br>
+        <img src="image/ai_plan.jpg" width="651" height="466">          </p>
+      <p><br>
+          <strong>Presets de sites</strong> Um &quot;Navegador&quot;. A caixa de texto podemos escrever uma url e ao clicar Go faz-se o link. J&aacute; btCh1 &eacute; um preset com endere&ccedil;o de site. <br>
+          <img src="image/aiWV_SitesPreset.jpg" width="414" height="374"></p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <hr>
+      <p>&nbsp;</p>
+      <h1>Outros</h1>
+      <p>&nbsp;</p>
+      <p><strong>Enviar texto pra lista de telefones</strong> https://youtu.be/KES6Ta3N1gU</p>
+      <p><strong>Login - Grava no celular </strong> TDB<br>
+  https://youtu.be/r9zJaWUwhtE<br>
+  <img src="image/aiLogin.jpg" width="584" height="297"></p>
+      <p>Menu Lateral com Slider <br>
+  https://www.youtube.com/watch?v=KNjJflvhz68 </p>
+      <p>Monetizar <br>
+  https://youtu.be/1M_0jzHej1o </p>
+      <p>Drawing 2D shapes<br>
+  https://youtu.be/UcjmB_urZQ8</p>
+      <p>Draw and Paint<br>
+  https://youtu.be/WYMPa5jXeDM</p>
+      <p>How to Drive in a Square <br>
+  https://youtu.be/a6uQ7uGVuiw</p>
+      <p>Verifica Senha<br>
+        https://youtu.be/zIAgWK5nldg</p>
+      <p>Testa Campo <br>
+  https://youtu.be/n0MCItgeQkE    </p>
+      <p>Agendamento (Firebase)<br>
+        https://www.youtube.com/watch?v=A6X6wPDctfk<br>https://www.youtube.com/watch?v=Re4NGUYQ1j0</p>
+      <p> BarGraphic Uso de um slider e um bot&atilde;o. <br>
+        <img src="image/aiInt_barg.jpg" width="346" height="138"> </p>
+      <p> Bluetooth Vide App Inventor &quot;Bluetooth&quot; para ckt <br>https://www.youtube.com/watch?v=gfOaMKVdj8I </p>
+      <p> Ethernet Vide App Inventor &quot;Ethernet&quot; para ckt <br>
+        https://www.youtube.com/watch?v=eBhyOVboKRo </p>
+      <p> accelerometer <span class="style3"><em>N&atilde;o testado!</em></span> <br>
+        https://www.youtube.com/watch?v=iVcM6sTLnNU</p>
+      <p>ContagemRegressivaDisparaSom Isso com false. Se false for trocado para true ele vai tocar mais de uma vez. <br>
+        https://www.youtube.com/watch?v=95CZHshnsMg <br>
+        <img src="image/ai_cont_reg_disp_som.jpg" width="439" height="152"></p>
+      <p>&nbsp;</p>
+      <p><strong>Cadastrar contato</strong> (no servidor MySQL; a_Agenda_PhpMyAdmin) Componente Web (menu esquerdo Connectivity) . PHP + MySql + AI. WampServer<br>
+        o codigo em si eh a parte do set Web_Cadastro. O trecho if do video é mero tratamento para nomes n estarem vazios        <br>
+        join:  http://192.168.1.100/agenda/gravar.php?nome=
+        <br>
+        como enviar dados pro banco de dados MySQL atraves do AI.<br>
+        n eh diretamente. passa pelo php, depois q vai passar pro mySQL        <br>
+https://youtu.be/kyXbH6Ik-4I <br>
+<img src="image/ai_agen.jpg" width="700" height="434"> </p>
+      <p>cookies <br>
+        https://www.youtube.com/watch?v=b-3FnNPJFmg </p>
+      <p>&nbsp;</p>
+      <p>Adiciona Itens e mostra<br>
+        https://youtu.be/7eb6xy_nUBk</p>
+      <p>&nbsp;</p>
+      <p>File b (ActivityStarter) (Mem&oacute;ria, Armazenamento )<br>https://www.youtube.com/watch?v=0nW2RXZq93w<br>
+        axu q esse ckt n funciona pq<br>
+        precisa ser instalado no cel, jah q ha diretorios.        <br>
+        Selecionar Arquivo (bot&atilde;o) Abre o &quot;HD&quot; do dispositivo e permite escolher um arquivo.txt para abrir.<br>
+        btMostrar (bot&atilde;o). Mostra o conte&uacute;do do arquivo escolhido. <br>
+        btSave (bot&atilde;o). Ao editar o conte&uacute;do aberto pode-se salvar.
+        <br>
+        Action: android.intent.action.PICK<br>
+        DataType: vnd.android.cursor.dir/lysesoft.andexplorer.file<br>
+        DataUrl: 
+        file:///mnt/sdcard/<br>
+        <span class="style3"><em>19: acho que &eacute; soma das letras de DataUrl </em></span><br>
+        <img src="image/aiMem_file.jpg" width="647" height="398"></p>
+      <p>Salva arquivo na memoria do cel <br>
+        https://www.youtube.com/watch?v=uMzLQo1R8FA        <br>
+        Append adiciona o texto ao final do arquivo.<br>
+        Clique no Append e reabrar o arquivo        <br>
+        <img src="image/aiMem_File2.jpg" width="845" height="173">        </p>
+      <p>GPS_E_GoogleMaps<br>
+        https://www.youtube.com/watch?v=nDUpOxnZfsk        </p>
+      <p>IMG - Vide &quot;IMG&quot; no App Inventor. <br>
+        https://www.youtube.com/watch?v=rAgllUjT6FE&amp;t=98s        </p>
+      <p>Img_DesenharCores<br>
+        https://www.youtube.com/watch?v=K6V9XKbkcMA </p>
+      <p>ImgRndWeb - Vide  no App Inventor. <br>https://www.youtube.com/watch?v=C8vDEio1oPA</p>
+      <p>Random Img. <br>
+        https://www.youtube.com/watch?v=oPh_KEYEXmk&amp;t=138s        <br>
+        <img src="image/ai_imgNum.jpg" width="475" height="201">        </p>
+      <p>&nbsp;</p>
+      <p>WV_Js_FullScreen<br>
+        <em>GoToUrl</em>: file:///mnt/sdcard/AppInventor/assets/js_fullscreen_d.html<br>
+        <em>File:</em> file:///android_asset/joesk.html        <br>
+        https://www.youtube.com/watch?v=oCE1VZ2LJqk        </p>
+      <p>&nbsp;</p>
+      <p>VdAutoB (v&iacute;deo) Escolhe sorteadamente um da lista e toca. N&atilde;o toca outro.  <br>
+        <em>Interval</em>: é um ofset, demora.         Interval de 222ms toca loopado<br>
+        true, false: 
+        inicia mp4 tocando e depois para. ou seja, toca 1 vez.<br>
+        false, true: 
+         inicia mp4 parado. fundo preto no tamanho determinado.<br>
+         true, true: inicia tocando e repete com o intervalo. Ou seja, toca varias vezes.
+         <br>
+         CKT 2 - pelo ckt parece q uma vez terminado o primeiro entraria no segundo, mas n entra. <br>
+         CKT 3 - bt Start e Pause
+         <br>
+         CKT 4 - VdPlayNextPrev
+         <br>
+        <img src="image/aiMem_vid.jpg" width="928" height="907">         </p>
+      <p>Buscar Video<br>
+        https://youtu.be/hmIxwC3qir0        </p>
+      <p>&nbsp;</p>
+      <p>Escolhe v&iacute;deo do &quot;HD&quot; e abre (ActivityStarter). &Eacute; possivel tocar bem com fullscreeen.<br>
+        ActivitySatar ha configuracoes em Action e DataType        <br>
+        https://www.youtube.com/watch?v=XBOUSL3Hqsg&amp;t=472s<br>
+        <img src="image/aiMem_vid2.jpg" width="666" height="158">        </p>
+      <p>&nbsp;</p>
+      <p>Seleciona radio pelo IP da radio (SndRadioOnline) <br>
+        https://www.youtube.com/watch?v=kiabjruULlc<br>
+        www.planetaxat.com/radio/<br>
+        TextBox pode ter uma string com o IP escrito direto<br>
+        <em>Player1.Source</em>: http://51.254.130.212:8000        <br>        
+        </p>
+      <p>pedometer Vide App Inventor. Parece q est&aacute; em alem&atilde;o. Tem q entender e p&ocirc;r em portugu&ecirc;s ou ingl&ecirc;s.     <br>
+        https://www.youtube.com/watch?v=1A9xevh6M1k </p>
+      <p>Menu Telas<br>
+        <img src="image/aiInt_telas.jpg" width="673" height="58">          </p>
+      <p>Img Rotate Pode-se tentar controlar a velocidade com um slider. <br>
+        <img src="image/ai_img_rot.jpg" width="533" height="58">        </p>
+      <p><br>
+        </p>
+      <p>&nbsp;</p>
+      <hr>
+      <p>&nbsp;</p>
+
+
+
+
+
+
+
+
+
+      <hr>
+      <p>&nbsp;</p>
+      <p>Fractal</p>
+      <p>ft: app inventor gallery<br>
+        Components: Canvas (width e height = fill parent); Horizontal Arrangement (com  3 bot&otilde;es) </p>
+      <p><img src="image/ai_Frac_SierpinskiTriangle.jpg" width="820" height="1090"> </p>
+      <p>&nbsp;</p>
+      <p>Pong</p>
+      <p><img src="image/ai_pong.jpg" width="836" height="658"></p>
+      <p>&nbsp;</p>
+<p>&nbsp;</p>
+
+
+<br />
+<br />
+<h3>Publicar na Google Play</h3>
+<br />
+
+
+<pre>
+https://www.youtube.com/watch?v=Y6noxzxsoLs
+</pre>
+
+<br />
+<br />
+<h3>Outras tecnologias</h3>
+<br />
+
+<pre>
+
+appinventor, app.thunkable.org, listas   // https://youtu.be/UPoj6_uU7qs <br>
+studio.code.org                // https://youtu.be/wIf8kbZ3T6c
+appinventor X kodular (c.kodular.io) X thunkable: plataformas para criar aplicativos// https://youtu.be/qQtb7SzGEjg
+microbit.org                   //https://www.youtube.com/watch?v=Ekg9AOsUH4k&index=3&list=PLW4TiNoiDJKKSpsn-UlbkqFNvRGcrRgvg
+</pre>
+
+
+<p>&nbsp;</p>
+<hr>
+<p>&nbsp;</p>
+<p><br>
+  </p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+
+
+
+
+
+<h1>Permiss&otilde;es em apps</h1>
+<!--
+<br>
+<br>
+
+
+
+<img class="img-responsive" name="#" alt="#" title="Kraftwerk - The Mix - A Farra dos Sons" />		
+-->
+<br>
+<br>
+
+
+<p>As chamadas permiss&otilde;es t&ecirc;m rela&ccedil;&otilde;es com a nossa seguran&ccedil;a. </p>
+
+<p>Cada uma nos informa do que ser&aacute; utilizado do nosso celular pelo soft que estamos instalando. Se instalamos uma câmera fotogr&aacute;fica ent&atilde;o ele pedir&aacute; acesso ao dispositivo de c&acirc;mera, bem como fotos e m&eacute;moria (para poder salvar as fotos que o usu&aacute;rio tirar). Se a c&acirc;mera tamb&eacute;m grava v&iacute;deo ent&atilde;o ser&aacute; necess&aacute;rio acesso ao microfone, afinal, um v&iacute;deo sem som &eacute; bem incomum.</p>
+<p>Entretanto muitos apps pedem coisas desnecess&aacute;rias, como  registros de liga&ccedil;&otilde;es ou autoriza&ccedil;&atilde;o para saber a posi&ccedil;&atilde;o geogr&aacute;fica do usu&aacute;rio; bem como PII, termo de seguran&ccedil;a da informa&ccedil;&atilde;o e que se refere &agrave;s informa&ccedil;&otilde;es de identifica&ccedil;&atilde;o pessoal.</p>
+<p>O fato é que os dados do usu&aacute;rio podem  dizer o perfil de consumo dele e isso tem valor de mercado. Um fabricante pode fazer uma aplica&ccedil;&atilde;o simples, como um editor de texto, soft de desenho ou aquela máquina fofográfica e com isso, quando o instalamos, automaticamente o desenvolvedor tem acesso a muitas informa&ccedil;&otilde;es de interesse. </p>
+<p>&nbsp;</p>
+<h3>Na pr&aacute;tica...</h3>
+<p>Aqui dois aplicativos como exemplo. </p>
+<p><img src="images/permissoes_apk.png" width="320" height="" border="1"></p>
+<p>&nbsp;</p>
+<p>O  app de laterna, claro,  precisa de uma permiss&atilde;o para lidar com a luz de <em>flash</em> da c&acirc;mera; por&eacute;m ele pede coisas que n&atilde;o tem nada a ver com isso, como &eacute; o caso da localiza&ccedil;&atilde;o.</p>
+<p>J&aacute; o programa da s&eacute;rie i-Kids (i-Tech, iP...) &eacute; desenvolvido no intuito de ajudar na educa&ccedil;&atilde;o e forma&ccedil;&atilde;o, n&atilde;o tendo interesse em coletar dados pessoais, motivo pelo qual n&atilde;o &ldquo;se pede&rdquo; permiss&otilde;es desnecess&aacute;rias como a localiza&ccedil;&atilde;o do usu&aacute;rio, etc.</p>
+<p>Portanto devemos ser espertos durante uma  instala&ccedil;&atilde;o e lermos o que diz as permiss&otilde;es. Simples!<br>
+  </p>
+  <br>
+<p>Saiba mais sobre apps para Android em <a href="http://www.estudio596.com/instalando_apk.html">Instalando Apk</a>.
+</p>
+
+
+
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+
+
+
+
+<h1>Instalando apk</h1>
+
+<br>
+
+<p>O sistema operacional Android é um produto da Google, assim a corporação deseja que instalemos aplicativos somente de seu outro produto, a loja Play Store (Google Play).
+
+<p> Ajustando a configuração do seu sistema operacional Android pode-se instalar softs de fontes diferentes da Google Play.
+
+<br>
+<br>
+<br>
+
+<h4>Acesse as opções de segurança</h4>
+
+<br>
+
+<p><strong>Ícone ajustes</strong> Icone com a engrenagem.
+
+<p><strong>Menu Geral, opção Segurança</strong> Ícone com cadeado.
+"Fontes Desconhecidas". Há um pequeno texto tal como "Permita a instalação de aplicativos...".
+
+<p><strong>Confirme no quadrado de check</strong> Agora seu celular Android permite a instalação de arquivos baixados por fontes que não são da Google/Play Store.
+
+
+<br>
+<br>
+<h4>Copie o Arquivo</h4>
+
+<p>A partir do seu PC, copie o arquivo apk para seu dispositivo Android (o celular, tablet)
+
+<br>
+<br>
+<h4>Exemplo: instalando iKids.apk</h4>
+
+<p>- Transfira o arquivo iKids.apk para seu dispositivo Android; por exemplo, para a pasta 
+<em>Download</em>.</p>
+<p>- Acesse em seu dispositivo Android o local (a tal pasta) do arquivo iKids.apk.</p>
+<p>- Clique em iKids.apk e instalar.</p>
+<p>Habilitar a instalação de fontes desconhecidas pode ser necessário.</p>
+
+	<br>		 
+<p>Saiba mais sobre apps para Android em <a href="http://www.estudio596.com/permissoes_em_apps.html">Permissões em Apps</a>.
+
+
+
+
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>
+
+
+
+
+
+
+
+    </div>
+
+
+</main> <!--Fim conteúdo (Não no WP)-->
+	 		
+
+
+
+
+
+			<br>
+			<br>
+			<br>
+	  
+	  
+    </div>
+	
+	
+	
+    <div class="col-sm-3 "> <!--Define largura da aside-->
+        
+		<br>
+		
+		<a href="http://www.estudio596.com/serv.html"> <!-- img do slideshow-->
+		<img class="img-responsive" id="slideshow" src="m.jpg" name="slide" alt="education ikids" title="I-Kids" />
+		</a> 									
+		<script src="js/slideshow.js"> </script>   <!-- Script referente ao slide; onload em body-->
+		
+		
+		<div class="text-left" w3-include-html="inc_aside.html"></div>  <!-- INCLUDE-->	
+		
+    </div>
+	
+
+  </div>
+</div>
+
+<footer class="container-fluid text-center">
+	<div w3-include-html="inc_footer.html"></div>  <!-- INCLUDE-->
+</footer>
+	<script> <!--INCLUDE-->
+	w3.includeHTML();
+	</script>
+</body>
+</html>
