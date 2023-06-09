@@ -1,0 +1,50 @@
+* {
+	font-family: monospace;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	text-transform: uppercase;
+	margin-top: 2em;
+}
+
+header {
+	display: flex;
+	margin-top: 2em;
+	font-weight: bold;
+	border-bottom: 1px solid lightgray;
+	background-image: linear-gradient(to top, lightyellow, white);		/* ou "to right" */
+}
+
+
+
+.icon {font-size: 2em}
+
+#titleApp {
+	font-size: 2em;
+}
+
+nav ul {
+	display: flex;
+	list-style: none; /* remove as bolinhas*/ 
+	}
+
+nav a {
+//	display:block;
+//	padding: .5em 1em;
+	margin-right: 3em;
+	color: var(--azul-escuro);
+	text-decoration:none; /*remove "sublinhados */
+	text-transform: uppercase;
+	font-size: .8em;
+	//background-color: red;
+	//border: solid 1px var(--azul-claro);
+}
+
+pre {
+	background-color: lightgray;
+}
+
+
+
+
+
